@@ -1,4 +1,4 @@
-import { AppKit, AppKitButton } from '@reown/appkit-wagmi-react-native';
+import { AppKitButton } from '@reown/appkit-wagmi-react-native';
 import { Image } from 'expo-image';
 import React from 'react';
 import { StyleSheet } from 'react-native';
@@ -25,7 +25,7 @@ export default function HomeScreen() {
         </ThemedView>
         <AppKitButton />
       </ParallaxScrollView>
-      <AppKit />
+
     </>
   );
 }

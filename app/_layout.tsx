@@ -1,6 +1,7 @@
 import {
+  AppKit,
   createAppKit,
-  defaultWagmiConfig,
+  defaultWagmiConfig
 } from "@reown/appkit-wagmi-react-native";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { arbitrum, mainnet, polygon } from "@wagmi/core/chains";
@@ -64,6 +65,7 @@ export default function RootLayout() {
             <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
             <Stack.Screen name="+not-found" />
           </Stack>
+          <AppKit />
           <StatusBar style="auto" />
         </QueryClientProvider>
       </WagmiProvider>
